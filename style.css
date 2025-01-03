@@ -12,14 +12,22 @@
   --primary-inactive-btn-bg: #ffffff;
   --primary-text-color: #3d3d3d;
   --theme-btn-bg: #fff;
+  --btns-bg-color: #d7d7d7;
   --common-margin-bottom: 6vh;
   font-size: 16px;
+}
+
+:root.dark {
+  --primary-bg-color: #0c151d;
+  --primary-text-color: #f1f2f4;
+  --btns-bg-color: #171f26;
 }
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: "Poppins", Arial;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 /* header start */
@@ -31,7 +39,7 @@ header {
   margin-bottom: var(--common-margin-bottom);
 }
 header svg {
-  background-color: #fff;
+  background-color: var(--btns-bg-color);
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
@@ -106,7 +114,7 @@ main .main-right p:first-child {
 
 .contact-section a {
   padding: 4vh 6vw;
-  color: var(--primary-text-color);
+  color: #3d3d3d;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -153,7 +161,7 @@ main .main-right p:first-child {
 }
 
 .skills-toggle-wrapper button:first-child {
-  background-color: #d7d7d7;
+  background-color: var(--btns-bg-color);
 }
 
 .skills-toggle-wrapper button:last-child {
