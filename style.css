@@ -28,6 +28,15 @@ body {
   color: var(--primary-text-color);
   font-family: "Poppins", Arial;
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  position: relative;
+  z-index: 9999;
+}
+
+.spline-3d {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -999;
 }
 
 /* header start */
@@ -37,6 +46,8 @@ header {
   justify-content: center;
   padding: 2vh 0;
   margin-bottom: var(--common-margin-bottom);
+  position: relative;
+  z-index: 9999;
 }
 header svg {
   background-color: var(--btns-bg-color);
